@@ -1,0 +1,27 @@
+﻿@model ProyectoDesviaciones.BD.AreaInvolucrada
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AreaInvolucrada</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionAreaInvolucrada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionAreaInvolucrada)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAreasInvolucradas }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

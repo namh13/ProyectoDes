@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9919601075104edab791974c4b70c5a9" Name="Diagram1">
+        <EntityTypeShape EntityType="DesviacionesDBModel1.AreaInvolucrada" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.Clientes" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.Componentes" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.DocumentosRelacionados" Width="2.875" PointX="3.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.TipoDesviacion" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.C__MigrationHistory" Width="1.5" PointX="10.375" PointY="6.75" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.AspNetRoles" Width="1.5" PointX="10.375" PointY="2.5" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.AspNetUserClaims" Width="1.5" PointX="14.875" PointY="3.625" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.AspNetUserLogins" Width="1.5" PointX="14.875" PointY="1" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.AspNetUsers" Width="1.5" PointX="12.625" PointY="1.375" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="DesviacionesDBModel1.AspNetUserRoles" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.Desviaciones" Width="1.5" PointX="13" PointY="6.75" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_Desviaciones_Clientes" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_Desviaciones_Componentes" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_Desviaciones_TipoDesviacion" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.ResultadoDeAreaInvolucrada" Width="1.5" PointX="15.25" PointY="10.625" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados" Width="1.5" PointX="15.25" PointY="7.25" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.ResultadoDePersonalInvolucrado" Width="1.5" PointX="18.25" PointY="9.75" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_Desviaciones" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_Desviaciones" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_Desviaciones" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" />
+        <EntityTypeShape EntityType="DesviacionesDBModel1.PersonalInvolucrado" Width="1.5" PointX="3.375" PointY="5" />
+        <AssociationConnector Association="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

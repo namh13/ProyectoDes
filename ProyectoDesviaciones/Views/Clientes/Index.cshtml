@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.Clientes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Clientes</h2>
+
+<p>
+    <a class="btn btn-sm btn-primary" href="/Clientes/Create">Crear Cliente</a>
+</p>
+
+<table class="table table-responsive table-bordered table-hover" role="grid"id="TablaClientes" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            <th style="width:130px;"></th>
+        </tr>
+    </thead>
+</table>
+
+@section Scripts{
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#TablaClientes').dataTable({
+                "ajax": {
+                    "url": "@Url.Action("GetClientes","Clientes")",
+                    "type": "GET",
+                    dataSrc : function(data) {
+                        return data;
+                    }
+                },
+                    "columns": [
+                        { data: "Nombre" },
+                        { data: "Telefono" },
+                        { 
+                            data: null,
+                            render: function (data) {
+                                return '<a class="btn btn-sm btn-warning" href="/Clientes/Edit/' + data.Id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/Clientes/Delete/' + data.Id + '">Eliminar</a>';
+                            }
+                        }
+                    ]
+            })
+        })
+    </script>
+    }

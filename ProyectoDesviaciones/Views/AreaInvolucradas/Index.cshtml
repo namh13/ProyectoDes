@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.AreaInvolucrada>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado Areas Involucradas</h2>
+
+<p>
+    <a class="btn btn-sm btn-primary" href="/AreaInvolucradas/Create">Crear Area Involucrada</a>
+</p>
+<table class="table table-responsive table-bordered table-hover" role="grid" id="TablaAreaInvolucradas" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+ 
+            <th style="width:130px;"></th>
+        </tr>
+    </thead>
+</table>
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#TablaAreaInvolucradas').dataTable({
+                "ajax": {
+                    "url": "@Url.Action("GetAreaInvolucradas","AreaInvolucradas")",
+                    "type": "GET",
+                    dataSrc : function(data) {
+                        return data;
+                    }
+                },
+                    "columns": [
+                        { data: "Nombre" },
+                 
+                        {
+                            data: null,
+                            render: function (data) {
+                                return '<a class="btn btn-sm btn-warning" href="/AreaInvolucradas/Edit/' + data.Id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/AreaInvolucradas/Delete/' + data.Id + '">Eliminar</a>';
+                            }
+                        }
+                    ]
+            })
+        })
+    </script>
+}

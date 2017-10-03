@@ -1,0 +1,35 @@
+﻿@model ProyectoDesviaciones.BD.Componentes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Componentes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroParte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroParte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionComponente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionComponente)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdComponente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DesviacionesDBModel1StoreContainer" CdmEntityContainer="DesviacionesDBEntities">
+    <EntitySetMapping Name="AreaInvolucrada">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.AreaInvolucrada">
+        <MappingFragment StoreEntitySet="AreaInvolucrada">
+          <ScalarProperty Name="IdAreasInvolucradas" ColumnName="IdAreasInvolucradas" />
+          <ScalarProperty Name="DescripcionAreaInvolucrada" ColumnName="DescripcionAreaInvolucrada" />
+          <ScalarProperty Name="EstadoAreaInvolucrada" ColumnName="EstadoAreaInvolucrada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="DescripcionDelCliente" ColumnName="DescripcionDelCliente" />
+          <ScalarProperty Name="TelefonoDelCliente" ColumnName="TelefonoDelCliente" />
+          <ScalarProperty Name="EstadoCliente" ColumnName="EstadoCliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Componentes">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.Componentes">
+        <MappingFragment StoreEntitySet="Componentes">
+          <ScalarProperty Name="IdComponente" ColumnName="IdComponente" />
+          <ScalarProperty Name="NumeroParte" ColumnName="NumeroParte" />
+          <ScalarProperty Name="DescripcionComponente" ColumnName="DescripcionComponente" />
+          <ScalarProperty Name="EstadoComponente" ColumnName="EstadoComponente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocumentosRelacionados">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.DocumentosRelacionados">
+        <MappingFragment StoreEntitySet="DocumentosRelacionados">
+          <ScalarProperty Name="IdDocumentosRelacionados" ColumnName="IdDocumentosRelacionados" />
+          <ScalarProperty Name="DescripcionDocumentosRelacionados" ColumnName="DescripcionDocumentosRelacionados" />
+          <ScalarProperty Name="EstadoDocumentoRelacionado" ColumnName="EstadoDocumentoRelacionado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDesviacion">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.TipoDesviacion">
+        <MappingFragment StoreEntitySet="TipoDesviacion">
+          <ScalarProperty Name="IdTipoDesviacion" ColumnName="IdTipoDesviacion" />
+          <ScalarProperty Name="DescripcionTipoDesviacion" ColumnName="DescripcionTipoDesviacion" />
+          <ScalarProperty Name="EstadoTipoDesviacion" ColumnName="EstadoTipoDesviacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="DesviacionesDBModel1.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Desviaciones">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.Desviaciones">
+        <MappingFragment StoreEntitySet="Desviaciones">
+          <ScalarProperty Name="EstadoDesviacion" ColumnName="EstadoDesviacion" />
+          <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+          <ScalarProperty Name="IdTipoDesviacion" ColumnName="IdTipoDesviacion" />
+          <ScalarProperty Name="CantidadDePiezas" ColumnName="CantidadDePiezas" />
+          <ScalarProperty Name="FechaVencimiento" ColumnName="FechaVencimiento" />
+          <ScalarProperty Name="Vencimiento" ColumnName="Vencimiento" />
+          <ScalarProperty Name="DetalleCriterioAceptado" ColumnName="DetalleCriterioAceptado" />
+          <ScalarProperty Name="CriterioAceptado" ColumnName="CriterioAceptado" />
+          <ScalarProperty Name="DescripcionResponsable" ColumnName="DescripcionResponsable" />
+          <ScalarProperty Name="DescripcionFechaDesviacion" ColumnName="DescripcionFechaDesviacion" />
+          <ScalarProperty Name="DescripcionPlanDeAccion" ColumnName="DescripcionPlanDeAccion" />
+          <ScalarProperty Name="DescripcionRazonDesviacion" ColumnName="DescripcionRazonDesviacion" />
+          <ScalarProperty Name="DescripcionCondicionComponente" ColumnName="DescripcionCondicionComponente" />
+          <ScalarProperty Name="DescripcionProcesoCorrecto" ColumnName="DescripcionProcesoCorrecto" />
+          <ScalarProperty Name="RequeridoPor" ColumnName="RequeridoPor" />
+          <ScalarProperty Name="FechaDesviacion" ColumnName="FechaDesviacion" />
+          <ScalarProperty Name="NumeroDesviacion" ColumnName="NumeroDesviacion" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdComponente" ColumnName="IdComponente" />
+          <ScalarProperty Name="IdDesviacion" ColumnName="IdDesviacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultadoDeAreaInvolucrada">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDeAreaInvolucrada">
+        <MappingFragment StoreEntitySet="ResultadoDeAreaInvolucrada">
+          <ScalarProperty Name="EstadoArea" ColumnName="EstadoArea" />
+          <ScalarProperty Name="IdDesviaciones" ColumnName="IdDesviaciones" />
+          <ScalarProperty Name="IdAreasInvolucradas" ColumnName="IdAreasInvolucradas" />
+          <ScalarProperty Name="IdArea" ColumnName="IdArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultadoDeDocumentosRelacionados">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados">
+        <MappingFragment StoreEntitySet="ResultadoDeDocumentosRelacionados">
+          <ScalarProperty Name="EstadoDocumento" ColumnName="EstadoDocumento" />
+          <ScalarProperty Name="IdDesviacion" ColumnName="IdDesviacion" />
+          <ScalarProperty Name="IdDocumentoRealizado" ColumnName="IdDocumentoRealizado" />
+          <ScalarProperty Name="IdDocumento" ColumnName="IdDocumento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResultadoDePersonalInvolucrado">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDePersonalInvolucrado">
+        <MappingFragment StoreEntitySet="ResultadoDePersonalInvolucrado">
+          <ScalarProperty Name="EstadoPersonalInvolucrado" ColumnName="EstadoPersonalInvolucrado" />
+          <ScalarProperty Name="FechaAprobacion" ColumnName="FechaAprobacion" />
+          <ScalarProperty Name="IdDesviaciones" ColumnName="IdDesviaciones" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+          <ScalarProperty Name="IdPersonalInvolucrado" ColumnName="IdPersonalInvolucrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonalInvolucrado">
+      <EntityTypeMapping TypeName="DesviacionesDBModel1.PersonalInvolucrado">
+        <MappingFragment StoreEntitySet="PersonalInvolucrado">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="OrdenAEvaluar" ColumnName="OrdenAEvaluar" />
+          <ScalarProperty Name="EstadoPersonal" ColumnName="EstadoPersonal" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,417 @@
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\csc.exe
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\vbc.exe
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll.config
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.pdb
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Owin.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\WebGrease.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.pdb
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.csprojResolveAssemblyReference.cache
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.dll
+C:\Users\marco\Desktop\Proyecto Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.pdb
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\csc.exe
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\vbc.exe
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll.config
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.pdb
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Owin.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\WebGrease.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.pdb
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Razor.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.csprojResolveAssemblyReference.cache
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.dll
+C:\Users\Nestor Munguia\Desktop\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.pdb
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\csc.exe
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\vbc.exe
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll.config
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.pdb
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Owin.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\WebGrease.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.pdb
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Helpers.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Mvc.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Optimization.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Razor.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.csprojResolveAssemblyReference.cache
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.dll
+C:\Users\marco\Desktop\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.pdb
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\csc.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\System.Collections.Immutable.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\vbc.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\VBCSCompiler.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\roslyn\VBCSCompiler.exe.config
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\ProyectoDesviaciones.dll.config
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\ProyectoDesviaciones.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\ProyectoDesviaciones.pdb
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Antlr3.Runtime.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\EntityFramework.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\EntityFramework.SqlServer.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Google.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Web.Infrastructure.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Newtonsoft.Json.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Helpers.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Mvc.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Optimization.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Razor.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.Deployment.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.Razor.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\WebGrease.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Helpers.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Mvc.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Optimization.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.Razor.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.Deployment.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\System.Web.WebPages.Razor.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Antlr3.Runtime.pdb
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Newtonsoft.Json.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\EntityFramework.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\EntityFramework.SqlServer.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Google.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.Helpers.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.Mvc.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.Optimization.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.Razor.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.WebPages.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin1\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\csc.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\vbc.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll.config
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\ProyectoDesviaciones.pdb
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Owin.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\WebGrease.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Helpers.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Mvc.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Optimization.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.Razor.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Antlr3.Runtime.pdb
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Newtonsoft.Json.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\EntityFramework.SqlServer.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.Razor.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Google.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.dll
+C:\Users\Nestor Munguia\Downloads\mb\mb\Desviaciones\ProyectoDesviaciones\ProyectoDesviaciones\obj\Debug\ProyectoDesviaciones.pdb

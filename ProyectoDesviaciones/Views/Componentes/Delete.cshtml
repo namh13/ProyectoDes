@@ -1,0 +1,41 @@
+﻿@model ProyectoDesviaciones.BD.Componentes
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Componentes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroParte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroParte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionComponente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionComponente)
+        </dd>
+
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

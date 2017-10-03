@@ -1,0 +1,26 @@
+﻿@model ProyectoDesviaciones.BD.TipoDesviacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipoDesviacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionTipoDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionTipoDesviacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdTipoDesviacion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

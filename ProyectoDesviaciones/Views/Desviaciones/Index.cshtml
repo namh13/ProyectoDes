@@ -1,0 +1,129 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.Desviaciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Desviaciones</h2>
+
+@if (TempData["Message"] != null)
+    {
+<script type="text/javascript">
+            window.onload = function () {
+                swal('@(TempData["Message"] as string)');
+            }
+</script>
+    }
+
+<p>
+    <a class="btn btn-sm btn-primary" href="/Desviaciones/Create">Crear Desviacion</a>
+</p>
+<table class="table table-responsive table-bordered table-hover" role="grid" id="TablaDesviaciones" style="width:100%;">
+    <thead>
+        <tr>
+            <th></th>
+            <th>ID</th>
+            <th>No. Desviacion</th>
+            <th>No. de Parte</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Requerido Por</th>
+            <th style="width:160px;"></th>
+        </tr>
+    </thead>  
+</table>
+
+@section Scripts{
+    <script src="~/Scripts/moment.js"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+
+<script>
+    var ID = '';
+    $('#TablaDesviaciones').on('click', 'td.details-control', function () {
+        ID = $('#TablaDesviaciones').DataTable().row(this).data().id;
+        console.log(ID);
+    });
+
+    function format(callback) {
+        $.ajax({
+            url: "@Url.Action("GetPersonalInvolucrado","Desviaciones")",
+            type: "POST",
+            data: {id : ID},
+            success: function (data) {
+                var thead = '';
+                var tbody = '';
+                for (var key in data[0]) {
+                    thead += '<th>' + key + '</th>';
+                }
+                $.each(data, function (index, item) {
+                    tbody += '<tr><td>'+ item.Nombre +'</td><td>'+ item.Cargo +'</td></tr>';
+                });
+                callback($('<table class="table table-responsive table-bordered table-hover" role="grid" style="width:100;">' + thead + tbody + '</table>')).show();
+            },
+        });
+    }
+
+    $(document).ready(function () {
+        var table = $('#TablaDesviaciones').DataTable({
+            "ajax": {
+                "url": "@Url.Action("GetDesviaciones","Desviaciones")",
+                "type": "GET",
+                dataSrc: function (data) {
+                    return data;
+                }
+            },
+            "columns": [
+                    {
+                        "className": 'details-control',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    },
+                    { data: "id" },
+                    { data: "NDesviacion" },
+                    { data: "NParte" },
+                    { data: "Cliente" },
+                    {
+                        data: null,
+                        render: function (data) {
+                            return moment(data).format('DD-MM-YYYY');
+                        }
+                    },
+                    { data: "RequeridoPor" },
+                    {
+                        data: null,
+                        render: function (data) {
+                            return '<a class="btn btn-sm btn-warning" href="/Desviaciones/Edit/' + data.id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/Desviaciones/Delete/' + data.id + '">Eliminar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-info" href="/Desviaciones/Details/' + data.id + '">Ver</a>';
+                        }
+                    }
+            ]
+        });
+        $('#TablaDesviaciones').on('click', 'td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var row = table.row(tr);
+
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('shown');
+            } else {
+                // Open this row
+                format(row.child);
+                tr.addClass('shown');
+            }
+        });
+    });
+</script>
+}
+
+<style>
+    td.details-control {
+    background: url('../Imagen/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../Imagen/details_close.png') no-repeat center center;
+}
+</style>

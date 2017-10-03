@@ -1,0 +1,40 @@
+﻿@model ProyectoDesviaciones.BD.Clientes
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Esta seguro de Eliminar este Cliente?</h2>
+
+
+<div>
+    
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionDelCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionDelCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TelefonoDelCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TelefonoDelCliente)
+        </dd>
+
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <a class="btn btn-sm btn-primary" href="/Clientes/Index">Listado Clientes</a>
+            <input type="submit" value="Eliminar" class="btn btn-sm btn-danger"/>
+        </div>
+    }
+</div>

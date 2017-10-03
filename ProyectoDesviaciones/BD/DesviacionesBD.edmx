@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DesviacionesDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+          <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AreaInvolucrada">
+          <Key>
+            <PropertyRef Name="IdAreasInvolucradas" />
+          </Key>
+          <Property Name="IdAreasInvolucradas" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DescripcionAreaInvolucrada" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoAreaInvolucrada" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUserClaims">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ClaimType" Type="nvarchar(max)" />
+          <Property Name="ClaimValue" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="AspNetUserLogins">
+          <Key>
+            <PropertyRef Name="LoginProvider" />
+            <PropertyRef Name="ProviderKey" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar(max)" />
+          <Property Name="SecurityStamp" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="nvarchar(max)" />
+          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="datetime" />
+          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DescripcionDelCliente" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="TelefonoDelCliente" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoCliente" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Componentes">
+          <Key>
+            <PropertyRef Name="IdComponente" />
+          </Key>
+          <Property Name="IdComponente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NumeroParte" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="DescripcionComponente" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoComponente" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Desviaciones">
+          <Key>
+            <PropertyRef Name="IdDesviacion" />
+          </Key>
+          <Property Name="IdDesviacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdComponente" Type="int" Nullable="false" />
+          <Property Name="IdCliente" Type="int" Nullable="false" />
+          <Property Name="NumeroDesviacion" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="FechaDesviacion" Type="date" Nullable="false" />
+          <Property Name="RequeridoPor" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="DescripcionProcesoCorrecto" Type="nvarchar(max)" />
+          <Property Name="DescripcionCondicionComponente" Type="nvarchar(max)" />
+          <Property Name="DescripcionRazonDesviacion" Type="nvarchar(max)" />
+          <Property Name="DescripcionPlanDeAccion" Type="nvarchar(max)" />
+          <Property Name="DescripcionFechaDesviacion" Type="date" Nullable="false" />
+          <Property Name="DescripcionResponsable" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CriterioAceptado" Type="bit" Nullable="false" />
+          <Property Name="DetalleCriterioAceptado" Type="nvarchar(max)" />
+          <Property Name="Vencimiento" Type="nvarchar(max)" />
+          <Property Name="FechaVencimiento" Type="date" />
+          <Property Name="CantidadDePiezas" Type="int" />
+          <Property Name="IdTipoDesviacion" Type="int" Nullable="false" />
+          <Property Name="CreadoPor" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoDesviacion" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DocumentosRelacionados">
+          <Key>
+            <PropertyRef Name="IdDocumentosRelacionados" />
+          </Key>
+          <Property Name="IdDocumentosRelacionados" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DescripcionDocumentosRelacionados" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoDocumentoRelacionado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PersonalInvolucrado">
+          <Key>
+            <PropertyRef Name="IdPersonal" />
+          </Key>
+          <Property Name="IdPersonal" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Cargo" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Apellido" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="CorreoElectronico" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoPersonal" Type="bit" Nullable="false" />
+          <Property Name="OrdenAEvaluar" Type="int" Nullable="false" />
+          <Property Name="Usuario" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="ResultadoDeAreaInvolucrada">
+          <Key>
+            <PropertyRef Name="IdArea" />
+          </Key>
+          <Property Name="IdArea" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdAreasInvolucradas" Type="int" Nullable="false" />
+          <Property Name="IdDesviaciones" Type="int" Nullable="false" />
+          <Property Name="EstadoArea" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResultadoDeDocumentosRelacionados">
+          <Key>
+            <PropertyRef Name="IdDocumento" />
+          </Key>
+          <Property Name="IdDocumento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdDocumentoRealizado" Type="int" Nullable="false" />
+          <Property Name="IdDesviacion" Type="int" Nullable="false" />
+          <Property Name="EstadoDocumento" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResultadoDePersonalInvolucrado">
+          <Key>
+            <PropertyRef Name="IdPersonalInvolucrado" />
+          </Key>
+          <Property Name="IdPersonalInvolucrado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdPersonal" Type="int" Nullable="false" />
+          <Property Name="IdDesviaciones" Type="int" Nullable="false" />
+          <Property Name="FechaAprobacion" Type="datetime" />
+          <Property Name="EstadoPersonalInvolucrado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TipoDesviacion">
+          <Key>
+            <PropertyRef Name="IdTipoDesviacion" />
+          </Key>
+          <Property Name="IdTipoDesviacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DescripcionTipoDesviacion" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="EstadoTipoDesviacion" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserClaims">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserLogins">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+          <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetRoles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Desviaciones_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="IdCliente" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Desviaciones_Componentes">
+          <End Role="Componentes" Type="Self.Componentes" Multiplicity="1" />
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Componentes">
+              <PropertyRef Name="IdComponente" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdComponente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Desviaciones_TipoDesviacion">
+          <End Role="TipoDesviacion" Type="Self.TipoDesviacion" Multiplicity="1" />
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoDesviacion">
+              <PropertyRef Name="IdTipoDesviacion" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdTipoDesviacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+          <End Role="AreaInvolucrada" Type="Self.AreaInvolucrada" Multiplicity="1" />
+          <End Role="ResultadoDeAreaInvolucrada" Type="Self.ResultadoDeAreaInvolucrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AreaInvolucrada">
+              <PropertyRef Name="IdAreasInvolucradas" />
+            </Principal>
+            <Dependent Role="ResultadoDeAreaInvolucrada">
+              <PropertyRef Name="IdAreasInvolucradas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeAreaInvolucrada_Desviaciones">
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+          <End Role="ResultadoDeAreaInvolucrada" Type="Self.ResultadoDeAreaInvolucrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDeAreaInvolucrada">
+              <PropertyRef Name="IdDesviaciones" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+          <End Role="ResultadoDeDocumentosRelacionados" Type="Self.ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDeDocumentosRelacionados">
+              <PropertyRef Name="IdDesviacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+          <End Role="DocumentosRelacionados" Type="Self.DocumentosRelacionados" Multiplicity="1" />
+          <End Role="ResultadoDeDocumentosRelacionados" Type="Self.ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DocumentosRelacionados">
+              <PropertyRef Name="IdDocumentosRelacionados" />
+            </Principal>
+            <Dependent Role="ResultadoDeDocumentosRelacionados">
+              <PropertyRef Name="IdDocumentoRealizado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDePersonalInvolucrado_Desviaciones">
+          <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+          <End Role="ResultadoDePersonalInvolucrado" Type="Self.ResultadoDePersonalInvolucrado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDePersonalInvolucrado">
+              <PropertyRef Name="IdDesviaciones" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+          <End Role="PersonalInvolucrado" Type="Self.PersonalInvolucrado" Multiplicity="1" />
+          <End Role="ResultadoDePersonalInvolucrado" Type="Self.ResultadoDePersonalInvolucrado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonalInvolucrado">
+              <PropertyRef Name="IdPersonal" />
+            </Principal>
+            <Dependent Role="ResultadoDePersonalInvolucrado">
+              <PropertyRef Name="IdPersonal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DesviacionesDBModel1StoreContainer">
+          <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AreaInvolucrada" EntityType="Self.AreaInvolucrada" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Componentes" EntityType="Self.Componentes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Desviaciones" EntityType="Self.Desviaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DocumentosRelacionados" EntityType="Self.DocumentosRelacionados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PersonalInvolucrado" EntityType="Self.PersonalInvolucrado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResultadoDeAreaInvolucrada" EntityType="Self.ResultadoDeAreaInvolucrada" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResultadoDeDocumentosRelacionados" EntityType="Self.ResultadoDeDocumentosRelacionados" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ResultadoDePersonalInvolucrado" EntityType="Self.ResultadoDePersonalInvolucrado" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoDesviacion" EntityType="Self.TipoDesviacion" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Desviaciones_Clientes" Association="Self.FK_Desviaciones_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Desviaciones_Componentes" Association="Self.FK_Desviaciones_Componentes">
+            <End Role="Componentes" EntitySet="Componentes" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Desviaciones_TipoDesviacion" Association="Self.FK_Desviaciones_TipoDesviacion">
+            <End Role="TipoDesviacion" EntitySet="TipoDesviacion" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" Association="Self.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+            <End Role="AreaInvolucrada" EntitySet="AreaInvolucrada" />
+            <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_Desviaciones" Association="Self.FK_ResultadoDeAreaInvolucrada_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones" Association="Self.FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" Association="Self.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+            <End Role="DocumentosRelacionados" EntitySet="DocumentosRelacionados" />
+            <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_Desviaciones" Association="Self.FK_ResultadoDePersonalInvolucrado_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" Association="Self.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+            <End Role="PersonalInvolucrado" EntitySet="PersonalInvolucrado" />
+            <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DesviacionesDBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AreaInvolucrada">
+          <Key>
+            <PropertyRef Name="IdAreasInvolucradas" />
+          </Key>
+          <Property Name="IdAreasInvolucradas" Type="Int32" Nullable="false" />
+          <Property Name="DescripcionAreaInvolucrada" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EstadoAreaInvolucrada" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ResultadoDeAreaInvolucrada" Relationship="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" FromRole="AreaInvolucrada" ToRole="ResultadoDeAreaInvolucrada" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="IdCliente" />
+          </Key>
+          <Property Name="IdCliente" Type="Int32" Nullable="false" />
+          <Property Name="DescripcionDelCliente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TelefonoDelCliente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EstadoCliente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_Desviaciones_Clientes" FromRole="Clientes" ToRole="Desviaciones" />
+        </EntityType>
+        <EntityType Name="Componentes">
+          <Key>
+            <PropertyRef Name="IdComponente" />
+          </Key>
+          <Property Name="IdComponente" Type="Int32" Nullable="false" />
+          <Property Name="NumeroParte" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DescripcionComponente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EstadoComponente" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_Desviaciones_Componentes" FromRole="Componentes" ToRole="Desviaciones" />
+        </EntityType>
+        <EntityType Name="DocumentosRelacionados">
+          <Key>
+            <PropertyRef Name="IdDocumentosRelacionados" />
+          </Key>
+          <Property Name="IdDocumentosRelacionados" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DescripcionDocumentosRelacionados" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EstadoDocumentoRelacionado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="ResultadoDeDocumentosRelacionados" Relationship="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" FromRole="DocumentosRelacionados" ToRole="ResultadoDeDocumentosRelacionados" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TipoDesviacion">
+          <Key>
+            <PropertyRef Name="IdTipoDesviacion" />
+          </Key>
+          <Property Name="IdTipoDesviacion" Type="Int32" Nullable="false" />
+          <Property Name="DescripcionTipoDesviacion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="EstadoTipoDesviacion" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_Desviaciones_TipoDesviacion" FromRole="TipoDesviacion" ToRole="Desviaciones" />
+        </EntityType>
+        <EntityContainer Name="DesviacionesDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AreaInvolucrada" EntityType="Self.AreaInvolucrada" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="Componentes" EntityType="Self.Componentes" />
+          <EntitySet Name="DocumentosRelacionados" EntityType="Self.DocumentosRelacionados" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="TipoDesviacion" EntityType="Self.TipoDesviacion" />
+          <EntitySet Name="C__MigrationHistory" EntityType="DesviacionesDBModel1.C__MigrationHistory" />
+          <EntitySet Name="AspNetRoles" EntityType="DesviacionesDBModel1.AspNetRoles" />
+          <EntitySet Name="AspNetUserClaims" EntityType="DesviacionesDBModel1.AspNetUserClaims" />
+          <EntitySet Name="AspNetUserLogins" EntityType="DesviacionesDBModel1.AspNetUserLogins" />
+          <EntitySet Name="AspNetUsers" EntityType="DesviacionesDBModel1.AspNetUsers" />
+          <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="DesviacionesDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="DesviacionesDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+          </AssociationSet>
+          <AssociationSet Name="AspNetUserRoles" Association="DesviacionesDBModel1.AspNetUserRoles">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+          </AssociationSet>
+          <EntitySet Name="Desviaciones" EntityType="DesviacionesDBModel1.Desviaciones" />
+          <AssociationSet Name="FK_Desviaciones_Clientes" Association="DesviacionesDBModel1.FK_Desviaciones_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Desviaciones_Componentes" Association="DesviacionesDBModel1.FK_Desviaciones_Componentes">
+            <End Role="Componentes" EntitySet="Componentes" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Desviaciones_TipoDesviacion" Association="DesviacionesDBModel1.FK_Desviaciones_TipoDesviacion">
+            <End Role="TipoDesviacion" EntitySet="TipoDesviacion" />
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+          </AssociationSet>
+          <EntitySet Name="ResultadoDeAreaInvolucrada" EntityType="DesviacionesDBModel1.ResultadoDeAreaInvolucrada" />
+          <EntitySet Name="ResultadoDeDocumentosRelacionados" EntityType="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados" />
+          <EntitySet Name="ResultadoDePersonalInvolucrado" EntityType="DesviacionesDBModel1.ResultadoDePersonalInvolucrado" />
+          <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" Association="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+            <End Role="AreaInvolucrada" EntitySet="AreaInvolucrada" />
+            <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_Desviaciones" Association="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones" Association="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_Desviaciones" Association="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_Desviaciones">
+            <End Role="Desviaciones" EntitySet="Desviaciones" />
+            <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" Association="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+            <End Role="DocumentosRelacionados" EntitySet="DocumentosRelacionados" />
+            <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+          </AssociationSet>
+          <EntitySet Name="PersonalInvolucrado" EntityType="DesviacionesDBModel1.PersonalInvolucrado" />
+          <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" Association="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+            <End Role="PersonalInvolucrado" EntitySet="PersonalInvolucrado" />
+            <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="C__MigrationHistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+            <PropertyRef Name="ContextKey" />
+          </Key>
+          <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AspNetRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="DesviacionesDBModel1.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUserClaims">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="DesviacionesDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUserLogins">
+          <Key>
+            <PropertyRef Name="LoginProvider" />
+            <PropertyRef Name="ProviderKey" />
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="DesviacionesDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUserClaims" Relationship="DesviacionesDBModel1.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+          <NavigationProperty Name="AspNetUserLogins" Relationship="DesviacionesDBModel1.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+          <NavigationProperty Name="AspNetRoles" Relationship="DesviacionesDBModel1.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+        </EntityType>
+        <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+          <End Type="DesviacionesDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DesviacionesDBModel1.AspNetUserClaims" Role="AspNetUserClaims" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserClaims">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+          <End Type="DesviacionesDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="DesviacionesDBModel1.AspNetUserLogins" Role="AspNetUserLogins" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserLogins">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AspNetUserRoles">
+          <End Type="DesviacionesDBModel1.AspNetRoles" Role="AspNetRoles" Multiplicity="*" />
+          <End Type="DesviacionesDBModel1.AspNetUsers" Role="AspNetUsers" Multiplicity="*" />
+        </Association>
+        <EntityType Name="Desviaciones">
+          <Key>
+            <PropertyRef Name="IdDesviacion" />
+          </Key>
+          <Property Name="IdDesviacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdComponente" Type="Int32" Nullable="false" />
+          <Property Name="IdCliente" Type="Int32" Nullable="false" />
+          <Property Name="NumeroDesviacion" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="FechaDesviacion" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="RequeridoPor" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DescripcionProcesoCorrecto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescripcionCondicionComponente" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescripcionRazonDesviacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescripcionPlanDeAccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DescripcionFechaDesviacion" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="DescripcionResponsable" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CriterioAceptado" Type="Boolean" Nullable="false" />
+          <Property Name="DetalleCriterioAceptado" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Vencimiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaVencimiento" Type="DateTime" Precision="0" />
+          <Property Name="CantidadDePiezas" Type="Int32" />
+          <Property Name="IdTipoDesviacion" Type="Int32" Nullable="false" />
+          <Property Name="CreadoPor" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="EstadoDesviacion" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Clientes" Relationship="DesviacionesDBModel1.FK_Desviaciones_Clientes" FromRole="Desviaciones" ToRole="Clientes" />
+          <NavigationProperty Name="Componentes" Relationship="DesviacionesDBModel1.FK_Desviaciones_Componentes" FromRole="Desviaciones" ToRole="Componentes" />
+          <NavigationProperty Name="TipoDesviacion" Relationship="DesviacionesDBModel1.FK_Desviaciones_TipoDesviacion" FromRole="Desviaciones" ToRole="TipoDesviacion" />
+          <NavigationProperty Name="ResultadoDeAreaInvolucrada" Relationship="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDeAreaInvolucrada" />
+          <NavigationProperty Name="ResultadoDeDocumentosRelacionados" Relationship="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDeDocumentosRelacionados" />
+          <NavigationProperty Name="ResultadoDePersonalInvolucrado" Relationship="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDePersonalInvolucrado" />
+        </EntityType>
+        <Association Name="FK_Desviaciones_Clientes">
+          <End Type="DesviacionesDBModel1.Clientes" Role="Clientes" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="IdCliente" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdCliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Desviaciones_Componentes">
+          <End Type="DesviacionesDBModel1.Componentes" Role="Componentes" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Componentes">
+              <PropertyRef Name="IdComponente" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdComponente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Desviaciones_TipoDesviacion">
+          <End Type="DesviacionesDBModel1.TipoDesviacion" Role="TipoDesviacion" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoDesviacion">
+              <PropertyRef Name="IdTipoDesviacion" />
+            </Principal>
+            <Dependent Role="Desviaciones">
+              <PropertyRef Name="IdTipoDesviacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ResultadoDeAreaInvolucrada">
+          <Key>
+            <PropertyRef Name="IdArea" />
+          </Key>
+          <Property Name="IdArea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdAreasInvolucradas" Type="Int32" Nullable="false" />
+          <Property Name="IdDesviaciones" Type="Int32" Nullable="false" />
+          <Property Name="EstadoArea" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="AreaInvolucrada" Relationship="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" FromRole="ResultadoDeAreaInvolucrada" ToRole="AreaInvolucrada" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_ResultadoDeAreaInvolucrada_Desviaciones" FromRole="ResultadoDeAreaInvolucrada" ToRole="Desviaciones" />
+        </EntityType>
+        <EntityType Name="ResultadoDeDocumentosRelacionados">
+          <Key>
+            <PropertyRef Name="IdDocumento" />
+          </Key>
+          <Property Name="IdDocumento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdDocumentoRealizado" Type="Int32" Nullable="false" />
+          <Property Name="IdDesviacion" Type="Int32" Nullable="false" />
+          <Property Name="EstadoDocumento" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_Desviaciones" FromRole="ResultadoDeDocumentosRelacionados" ToRole="Desviaciones" />
+          <NavigationProperty Name="DocumentosRelacionados" Relationship="DesviacionesDBModel1.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" FromRole="ResultadoDeDocumentosRelacionados" ToRole="DocumentosRelacionados" />
+        </EntityType>
+        <EntityType Name="ResultadoDePersonalInvolucrado">
+          <Key>
+            <PropertyRef Name="IdPersonalInvolucrado" />
+          </Key>
+          <Property Name="IdPersonalInvolucrado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdPersonal" Type="Int32" Nullable="false" />
+          <Property Name="IdDesviaciones" Type="Int32" Nullable="false" />
+          <Property Name="FechaAprobacion" Type="DateTime" Precision="3" />
+          <Property Name="EstadoPersonalInvolucrado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Desviaciones" Relationship="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_Desviaciones" FromRole="ResultadoDePersonalInvolucrado" ToRole="Desviaciones" />
+          <NavigationProperty Name="PersonalInvolucrado" Relationship="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" FromRole="ResultadoDePersonalInvolucrado" ToRole="PersonalInvolucrado" />
+        </EntityType>
+        <Association Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+          <End Type="DesviacionesDBModel1.AreaInvolucrada" Role="AreaInvolucrada" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDeAreaInvolucrada" Role="ResultadoDeAreaInvolucrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AreaInvolucrada">
+              <PropertyRef Name="IdAreasInvolucradas" />
+            </Principal>
+            <Dependent Role="ResultadoDeAreaInvolucrada">
+              <PropertyRef Name="IdAreasInvolucradas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeAreaInvolucrada_Desviaciones">
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDeAreaInvolucrada" Role="ResultadoDeAreaInvolucrada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDeAreaInvolucrada">
+              <PropertyRef Name="IdDesviaciones" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados" Role="ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDeDocumentosRelacionados">
+              <PropertyRef Name="IdDesviacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDePersonalInvolucrado_Desviaciones">
+          <End Type="DesviacionesDBModel1.Desviaciones" Role="Desviaciones" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDePersonalInvolucrado" Role="ResultadoDePersonalInvolucrado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Desviaciones">
+              <PropertyRef Name="IdDesviacion" />
+            </Principal>
+            <Dependent Role="ResultadoDePersonalInvolucrado">
+              <PropertyRef Name="IdDesviaciones" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+          <End Type="DesviacionesDBModel1.DocumentosRelacionados" Role="DocumentosRelacionados" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados" Role="ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DocumentosRelacionados">
+              <PropertyRef Name="IdDocumentosRelacionados" />
+            </Principal>
+            <Dependent Role="ResultadoDeDocumentosRelacionados">
+              <PropertyRef Name="IdDocumentoRealizado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="PersonalInvolucrado">
+          <Key>
+            <PropertyRef Name="IdPersonal" />
+          </Key>
+          <Property Name="IdPersonal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Cargo" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Apellido" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="CorreoElectronico" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="EstadoPersonal" Type="Boolean" Nullable="false" />
+          <Property Name="OrdenAEvaluar" Type="Int32" Nullable="false" />
+          <Property Name="Usuario" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ResultadoDePersonalInvolucrado" Relationship="DesviacionesDBModel1.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" FromRole="PersonalInvolucrado" ToRole="ResultadoDePersonalInvolucrado" />
+        </EntityType>
+        <Association Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+          <End Type="DesviacionesDBModel1.PersonalInvolucrado" Role="PersonalInvolucrado" Multiplicity="1" />
+          <End Type="DesviacionesDBModel1.ResultadoDePersonalInvolucrado" Role="ResultadoDePersonalInvolucrado" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PersonalInvolucrado">
+              <PropertyRef Name="IdPersonal" />
+            </Principal>
+            <Dependent Role="ResultadoDePersonalInvolucrado">
+              <PropertyRef Name="IdPersonal" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DesviacionesDBModel1StoreContainer" CdmEntityContainer="DesviacionesDBEntities">
+          <EntitySetMapping Name="AreaInvolucrada">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.AreaInvolucrada">
+              <MappingFragment StoreEntitySet="AreaInvolucrada">
+                <ScalarProperty Name="IdAreasInvolucradas" ColumnName="IdAreasInvolucradas" />
+                <ScalarProperty Name="DescripcionAreaInvolucrada" ColumnName="DescripcionAreaInvolucrada" />
+                <ScalarProperty Name="EstadoAreaInvolucrada" ColumnName="EstadoAreaInvolucrada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+                <ScalarProperty Name="DescripcionDelCliente" ColumnName="DescripcionDelCliente" />
+                <ScalarProperty Name="TelefonoDelCliente" ColumnName="TelefonoDelCliente" />
+                <ScalarProperty Name="EstadoCliente" ColumnName="EstadoCliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Componentes">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.Componentes">
+              <MappingFragment StoreEntitySet="Componentes">
+                <ScalarProperty Name="IdComponente" ColumnName="IdComponente" />
+                <ScalarProperty Name="NumeroParte" ColumnName="NumeroParte" />
+                <ScalarProperty Name="DescripcionComponente" ColumnName="DescripcionComponente" />
+                <ScalarProperty Name="EstadoComponente" ColumnName="EstadoComponente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DocumentosRelacionados">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.DocumentosRelacionados">
+              <MappingFragment StoreEntitySet="DocumentosRelacionados">
+                <ScalarProperty Name="IdDocumentosRelacionados" ColumnName="IdDocumentosRelacionados" />
+                <ScalarProperty Name="DescripcionDocumentosRelacionados" ColumnName="DescripcionDocumentosRelacionados" />
+                <ScalarProperty Name="EstadoDocumentoRelacionado" ColumnName="EstadoDocumentoRelacionado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoDesviacion">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.TipoDesviacion">
+              <MappingFragment StoreEntitySet="TipoDesviacion">
+                <ScalarProperty Name="IdTipoDesviacion" ColumnName="IdTipoDesviacion" />
+                <ScalarProperty Name="DescripcionTipoDesviacion" ColumnName="DescripcionTipoDesviacion" />
+                <ScalarProperty Name="EstadoTipoDesviacion" ColumnName="EstadoTipoDesviacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="C__MigrationHistory">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.C__MigrationHistory">
+              <MappingFragment StoreEntitySet="__MigrationHistory">
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetRoles">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetRoles">
+              <MappingFragment StoreEntitySet="AspNetRoles">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUserClaims">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUserClaims">
+              <MappingFragment StoreEntitySet="AspNetUserClaims">
+                <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+                <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUserLogins">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUserLogins">
+              <MappingFragment StoreEntitySet="AspNetUserLogins">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+                <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUsers">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.AspNetUsers">
+              <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="AspNetUserRoles" TypeName="DesviacionesDBModel1.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+            <EndProperty Name="AspNetUsers">
+              <ScalarProperty Name="Id" ColumnName="UserId" />
+            </EndProperty>
+            <EndProperty Name="AspNetRoles">
+              <ScalarProperty Name="Id" ColumnName="RoleId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <EntitySetMapping Name="Desviaciones">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.Desviaciones">
+              <MappingFragment StoreEntitySet="Desviaciones">
+                <ScalarProperty Name="EstadoDesviacion" ColumnName="EstadoDesviacion" />
+                <ScalarProperty Name="CreadoPor" ColumnName="CreadoPor" />
+                <ScalarProperty Name="IdTipoDesviacion" ColumnName="IdTipoDesviacion" />
+                <ScalarProperty Name="CantidadDePiezas" ColumnName="CantidadDePiezas" />
+                <ScalarProperty Name="FechaVencimiento" ColumnName="FechaVencimiento" />
+                <ScalarProperty Name="Vencimiento" ColumnName="Vencimiento" />
+                <ScalarProperty Name="DetalleCriterioAceptado" ColumnName="DetalleCriterioAceptado" />
+                <ScalarProperty Name="CriterioAceptado" ColumnName="CriterioAceptado" />
+                <ScalarProperty Name="DescripcionResponsable" ColumnName="DescripcionResponsable" />
+                <ScalarProperty Name="DescripcionFechaDesviacion" ColumnName="DescripcionFechaDesviacion" />
+                <ScalarProperty Name="DescripcionPlanDeAccion" ColumnName="DescripcionPlanDeAccion" />
+                <ScalarProperty Name="DescripcionRazonDesviacion" ColumnName="DescripcionRazonDesviacion" />
+                <ScalarProperty Name="DescripcionCondicionComponente" ColumnName="DescripcionCondicionComponente" />
+                <ScalarProperty Name="DescripcionProcesoCorrecto" ColumnName="DescripcionProcesoCorrecto" />
+                <ScalarProperty Name="RequeridoPor" ColumnName="RequeridoPor" />
+                <ScalarProperty Name="FechaDesviacion" ColumnName="FechaDesviacion" />
+                <ScalarProperty Name="NumeroDesviacion" ColumnName="NumeroDesviacion" />
+                <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+                <ScalarProperty Name="IdComponente" ColumnName="IdComponente" />
+                <ScalarProperty Name="IdDesviacion" ColumnName="IdDesviacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResultadoDeAreaInvolucrada">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDeAreaInvolucrada">
+              <MappingFragment StoreEntitySet="ResultadoDeAreaInvolucrada">
+                <ScalarProperty Name="EstadoArea" ColumnName="EstadoArea" />
+                <ScalarProperty Name="IdDesviaciones" ColumnName="IdDesviaciones" />
+                <ScalarProperty Name="IdAreasInvolucradas" ColumnName="IdAreasInvolucradas" />
+                <ScalarProperty Name="IdArea" ColumnName="IdArea" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResultadoDeDocumentosRelacionados">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDeDocumentosRelacionados">
+              <MappingFragment StoreEntitySet="ResultadoDeDocumentosRelacionados">
+                <ScalarProperty Name="EstadoDocumento" ColumnName="EstadoDocumento" />
+                <ScalarProperty Name="IdDesviacion" ColumnName="IdDesviacion" />
+                <ScalarProperty Name="IdDocumentoRealizado" ColumnName="IdDocumentoRealizado" />
+                <ScalarProperty Name="IdDocumento" ColumnName="IdDocumento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResultadoDePersonalInvolucrado">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.ResultadoDePersonalInvolucrado">
+              <MappingFragment StoreEntitySet="ResultadoDePersonalInvolucrado">
+                <ScalarProperty Name="EstadoPersonalInvolucrado" ColumnName="EstadoPersonalInvolucrado" />
+                <ScalarProperty Name="FechaAprobacion" ColumnName="FechaAprobacion" />
+                <ScalarProperty Name="IdDesviaciones" ColumnName="IdDesviaciones" />
+                <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+                <ScalarProperty Name="IdPersonalInvolucrado" ColumnName="IdPersonalInvolucrado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonalInvolucrado">
+            <EntityTypeMapping TypeName="DesviacionesDBModel1.PersonalInvolucrado">
+              <MappingFragment StoreEntitySet="PersonalInvolucrado">
+                <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+                <ScalarProperty Name="OrdenAEvaluar" ColumnName="OrdenAEvaluar" />
+                <ScalarProperty Name="EstadoPersonal" ColumnName="EstadoPersonal" />
+                <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+                <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+                <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="IdPersonal" ColumnName="IdPersonal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,54 @@
+﻿@model ProyectoDesviaciones.BD.DocumentosRelacionados
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>DocumentosRelacionados</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.IdDocumentosRelacionados)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DescripcionDocumentosRelacionados, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DescripcionDocumentosRelacionados, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DescripcionDocumentosRelacionados, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*----------Esto no lo ocupas-------------- *@
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.EstadoDocumentoRelacionado, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.EstadoDocumentoRelacionado)
+                    @Html.ValidationMessageFor(model => model.EstadoDocumentoRelacionado, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input onclick="window.location.href='@Url.Action("Index","DocumentosRelacionados")'" value="Listado de Documentos" class="btn btn-primary" />  @*Esto lo agregas vos, es mas que todo estetica*@
+                <input type="submit" value="Actualizar" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+@*<div>
+        @Html.ActionLink("Back to List", "Index")     ----- El boton que agregue arriba es esto mismo, solo que aqui se hace con un link y arriba con un button
+    </div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.DocumentosRelacionados>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado Documentos Relacionados</h2>
+
+
+@*@Html.ActionLink("Crear Nuevo", "Create")*@
+<p>
+    <a class="btn btn-sm btn-primary" href="/DocumentosRelacionados/Create">Crear Documento Relacionado</a>
+</p>
+
+<table class="table table-responsive table-bordered table-hover" role="grid" id="TablaDocumentosRelacionados" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th style="width:130px;"></th>
+        </tr>
+    </thead>
+</table>
+       
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#TablaDocumentosRelacionados').dataTable({
+                "ajax": {
+                    "url": "@Url.Action("GetDocumentosRelacionados","DocumentosRelacionados")",
+                    "type": "GET",
+                    dataSrc : function(data) {
+                        return data;
+                    }
+                },
+                    "columns": [
+                        { data: "Nombre" },
+                        {
+                            data: null,
+                            render: function (data) {
+                                return '<a class="btn btn-sm btn-warning" href="/DocumentosRelacionados/Edit/' + data.Id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/DocumentosRelacionados/Delete/' + data.Id + '">Eliminar</a>';
+                            }
+                        }
+                    ]
+            })
+        })
+    </script>
+}

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.PersonalInvolucrado>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (TempData["Message"] != null)
+    {
+<script type="text/javascript">
+            window.onload = function () {
+                swal('@(TempData["Message"] as string)');
+            }
+</script>
+    }
+
+
+<h2>Listado Personal Involucrado</h2>
+
+<p>
+    <a class="btn btn-sm btn-primary" href="/PersonalInvolucradoes/Create">Crear Personal Involucrado</a>
+</p>
+<table class="table table-responsive table-bordered table-hover" role="grid" id="TablaPersonalInvolucradoes" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Cargo</th>
+            <th>Correo Electronico</th>
+            <th>Orden de Aprobacion Desviacion</th>
+            <th>Usuario</th>
+            <th style="width:130px;"></th>
+        </tr>
+    </thead>
+</table>
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#TablaPersonalInvolucradoes').dataTable({
+                "ajax": {
+                    "url": "@Url.Action("GetPersonalInvolucradoes","PersonalInvolucradoes")",
+                    "type": "GET",
+                    dataSrc : function(data) {
+                        return data;
+                    }
+                },
+                    "columns": [
+                        { data: "Nombre" },
+                        { data: "Apellido" },
+                        { data: "Cargo" },
+                        { data: "CorreoElectronico" },
+                        { data: "OrdenEvaluar" },
+                        { data: "Usuario"},
+                        {
+                            data: null,
+                            render: function (data) {
+                                return '<a class="btn btn-sm btn-warning" href="/PersonalInvolucradoes/Edit/' + data.Id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/PersonalInvolucradoes/Delete/' + data.Id + '">Eliminar</a>';
+                            }
+                        }
+                    ]
+            })
+        })
+    </script>
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ProyectoDesviaciones.BD.Componentes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado Componentes</h2>
+
+<p>
+    <a class="btn btn-sm btn-primary" href="/Componentes/Create">Crear Componentes</a>
+</p>
+<table class="table table-responsive table-bordered table-hover" role="grid" id="TablaComponentes" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Numero de Parte</th>
+            <th style="width:130px;"></th>
+        </tr>
+    </thead>
+</table>
+
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+
+<script>
+    $(document).ready(function () {
+        $('#TablaComponentes').dataTable({
+            "ajax": {
+                "url": "@Url.Action("GetComponentes", "Componentes")",
+            "type": "GET",
+            dataSrc : function(data) {
+                return data;
+            }
+        },
+            "columns": [
+                       { data: "Nombre" },
+                       { data: "NumeroDeParte" },
+                       {
+                           data: null,
+                           render: function (data) {
+                               return '<a class="btn btn-sm btn-warning" href="/Componentes/Edit/' + data.Id + '">Editar</a>' + '&nbsp;' + '&nbsp;' + '<a class="btn btn-sm btn-danger" href="/Componentes/Delete/' + data.Id + '">Eliminar</a>';
+                           }
+                       }
+            ]
+        })
+    })
+
+  </script>
+}

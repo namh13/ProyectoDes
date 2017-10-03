@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DesviacionesDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AreaInvolucrada">
+    <Key>
+      <PropertyRef Name="IdAreasInvolucradas" />
+    </Key>
+    <Property Name="IdAreasInvolucradas" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionAreaInvolucrada" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoAreaInvolucrada" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ResultadoDeAreaInvolucrada" Relationship="Self.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" FromRole="AreaInvolucrada" ToRole="ResultadoDeAreaInvolucrada" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionDelCliente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TelefonoDelCliente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoCliente" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_Desviaciones_Clientes" FromRole="Clientes" ToRole="Desviaciones" />
+  </EntityType>
+  <EntityType Name="Componentes">
+    <Key>
+      <PropertyRef Name="IdComponente" />
+    </Key>
+    <Property Name="IdComponente" Type="Int32" Nullable="false" />
+    <Property Name="NumeroParte" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DescripcionComponente" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoComponente" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_Desviaciones_Componentes" FromRole="Componentes" ToRole="Desviaciones" />
+    <NavigationProperty Name="ResultadoDeTipoDeComponente" Relationship="Self.FK_ResultadoDeTipoDeComponente_Componentes" FromRole="Componentes" ToRole="ResultadoDeTipoDeComponente" />
+  </EntityType>
+  <EntityType Name="Desviaciones">
+    <Key>
+      <PropertyRef Name="IdDesviacion" />
+    </Key>
+    <Property Name="IdDesviacion" Type="Int32" Nullable="false" />
+    <Property Name="IdComponente" Type="Int32" Nullable="false" />
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <Property Name="NumeroDesviacion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FechaDesviacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="RequeridoPor" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DescripcionFechaDesviacion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Responsable" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CriterioAceptado" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Vencimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaVencimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CantidadDePiezas" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clientes" Relationship="Self.FK_Desviaciones_Clientes" FromRole="Desviaciones" ToRole="Clientes" />
+    <NavigationProperty Name="Componentes" Relationship="Self.FK_Desviaciones_Componentes" FromRole="Desviaciones" ToRole="Componentes" />
+    <NavigationProperty Name="ResultadoDeAreaInvolucrada" Relationship="Self.FK_ResultadoDeAreaInvolucrada_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDeAreaInvolucrada" />
+    <NavigationProperty Name="ResultadoDeDocumentosRelacionados" Relationship="Self.FK_ResultadoDeDocumentosRelacionados_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDeDocumentosRelacionados" />
+    <NavigationProperty Name="ResultadoDePersonalInvolucrado" Relationship="Self.FK_ResultadoDePersonalInvolucrado_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDePersonalInvolucrado" />
+    <NavigationProperty Name="ResultadoDeTipoDeComponente" Relationship="Self.FK_ResultadoDeTipoDeComponente_Desviaciones" FromRole="Desviaciones" ToRole="ResultadoDeTipoDeComponente" />
+  </EntityType>
+  <EntityType Name="DocumentosRelacionados">
+    <Key>
+      <PropertyRef Name="IdDocumentosRelacionados" />
+    </Key>
+    <Property Name="IdDocumentosRelacionados" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionDocumentosRelacionados" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoDocumentoRelacionado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ResultadoDeDocumentosRelacionados" Relationship="Self.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" FromRole="DocumentosRelacionados" ToRole="ResultadoDeDocumentosRelacionados" />
+  </EntityType>
+  <EntityType Name="PersonalInvolucrado">
+    <Key>
+      <PropertyRef Name="IdPersonal" />
+    </Key>
+    <Property Name="IdPersonal" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cargo" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoPersonal" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ResultadoDePersonalInvolucrado" Relationship="Self.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" FromRole="PersonalInvolucrado" ToRole="ResultadoDePersonalInvolucrado" />
+  </EntityType>
+  <EntityType Name="ResultadoDeDocumentosRelacionados">
+    <Key>
+      <PropertyRef Name="IdDocumento" />
+    </Key>
+    <Property Name="IdDocumento" Type="Int32" Nullable="false" />
+    <Property Name="IdDocumentoRealizado" Type="Int32" Nullable="false" />
+    <Property Name="IdDesviacion" Type="Int32" Nullable="false" />
+    <Property Name="ResultadoDocumento" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_ResultadoDeDocumentosRelacionados_Desviaciones" FromRole="ResultadoDeDocumentosRelacionados" ToRole="Desviaciones" />
+    <NavigationProperty Name="DocumentosRelacionados" Relationship="Self.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" FromRole="ResultadoDeDocumentosRelacionados" ToRole="DocumentosRelacionados" />
+  </EntityType>
+  <EntityType Name="ResultadoDePersonalInvolucrado">
+    <Key>
+      <PropertyRef Name="IdPersonalInvolucrado" />
+    </Key>
+    <Property Name="IdPersonalInvolucrado" Type="Int32" Nullable="false" />
+    <Property Name="IdPersonal" Type="Int32" Nullable="false" />
+    <Property Name="IdDesviaciones" Type="Int32" Nullable="false" />
+    <Property Name="AprobacionPorPersonal" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_ResultadoDePersonalInvolucrado_Desviaciones" FromRole="ResultadoDePersonalInvolucrado" ToRole="Desviaciones" />
+    <NavigationProperty Name="PersonalInvolucrado" Relationship="Self.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" FromRole="ResultadoDePersonalInvolucrado" ToRole="PersonalInvolucrado" />
+  </EntityType>
+  <EntityType Name="ResultadoDeTipoDeComponente">
+    <Key>
+      <PropertyRef Name="IdResultado" />
+    </Key>
+    <Property Name="IdResultado" Type="Int32" Nullable="false" />
+    <Property Name="IdComponente" Type="Int32" Nullable="false" />
+    <Property Name="IdDesviacion" Type="Int32" Nullable="false" />
+    <Property Name="ResultadoComponente" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Componentes" Relationship="Self.FK_ResultadoDeTipoDeComponente_Componentes" FromRole="ResultadoDeTipoDeComponente" ToRole="Componentes" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_ResultadoDeTipoDeComponente_Desviaciones" FromRole="ResultadoDeTipoDeComponente" ToRole="Desviaciones" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoDesviacion">
+    <Key>
+      <PropertyRef Name="IdTipoDesviacion" />
+    </Key>
+    <Property Name="IdTipoDesviacion" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionTipoDesviacion" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EstadoTipoDesviacion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResultadoDeAreaInvolucrada">
+    <Key>
+      <PropertyRef Name="IdArea" />
+      <PropertyRef Name="IdAreasInvolucradas" />
+      <PropertyRef Name="IdDesviaciones" />
+      <PropertyRef Name="ResultadoArea" />
+    </Key>
+    <Property Name="IdArea" Type="Int32" Nullable="false" />
+    <Property Name="IdAreasInvolucradas" Type="Int32" Nullable="false" />
+    <Property Name="IdDesviaciones" Type="Int32" Nullable="false" />
+    <Property Name="ResultadoArea" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AreaInvolucrada" Relationship="Self.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" FromRole="ResultadoDeAreaInvolucrada" ToRole="AreaInvolucrada" />
+    <NavigationProperty Name="Desviaciones" Relationship="Self.FK_ResultadoDeAreaInvolucrada_Desviaciones" FromRole="ResultadoDeAreaInvolucrada" ToRole="Desviaciones" />
+  </EntityType>
+  <Association Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+    <End Role="AreaInvolucrada" Type="Self.AreaInvolucrada" Multiplicity="1" />
+    <End Role="ResultadoDeAreaInvolucrada" Type="Self.ResultadoDeAreaInvolucrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreaInvolucrada">
+        <PropertyRef Name="IdAreasInvolucradas" />
+      </Principal>
+      <Dependent Role="ResultadoDeAreaInvolucrada">
+        <PropertyRef Name="IdAreasInvolucradas" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Desviaciones_Clientes">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Desviaciones">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Desviaciones_Componentes">
+    <End Role="Componentes" Type="Self.Componentes" Multiplicity="1" />
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Componentes">
+        <PropertyRef Name="IdComponente" />
+      </Principal>
+      <Dependent Role="Desviaciones">
+        <PropertyRef Name="IdComponente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDeTipoDeComponente_Componentes">
+    <End Role="Componentes" Type="Self.Componentes" Multiplicity="1" />
+    <End Role="ResultadoDeTipoDeComponente" Type="Self.ResultadoDeTipoDeComponente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Componentes">
+        <PropertyRef Name="IdComponente" />
+      </Principal>
+      <Dependent Role="ResultadoDeTipoDeComponente">
+        <PropertyRef Name="IdComponente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDeAreaInvolucrada_Desviaciones">
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+    <End Role="ResultadoDeAreaInvolucrada" Type="Self.ResultadoDeAreaInvolucrada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Desviaciones">
+        <PropertyRef Name="IdDesviacion" />
+      </Principal>
+      <Dependent Role="ResultadoDeAreaInvolucrada">
+        <PropertyRef Name="IdDesviaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+    <End Role="ResultadoDeDocumentosRelacionados" Type="Self.ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Desviaciones">
+        <PropertyRef Name="IdDesviacion" />
+      </Principal>
+      <Dependent Role="ResultadoDeDocumentosRelacionados">
+        <PropertyRef Name="IdDesviacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDePersonalInvolucrado_Desviaciones">
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+    <End Role="ResultadoDePersonalInvolucrado" Type="Self.ResultadoDePersonalInvolucrado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Desviaciones">
+        <PropertyRef Name="IdDesviacion" />
+      </Principal>
+      <Dependent Role="ResultadoDePersonalInvolucrado">
+        <PropertyRef Name="IdDesviaciones" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDeTipoDeComponente_Desviaciones">
+    <End Role="Desviaciones" Type="Self.Desviaciones" Multiplicity="1" />
+    <End Role="ResultadoDeTipoDeComponente" Type="Self.ResultadoDeTipoDeComponente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Desviaciones">
+        <PropertyRef Name="IdDesviacion" />
+      </Principal>
+      <Dependent Role="ResultadoDeTipoDeComponente">
+        <PropertyRef Name="IdDesviacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+    <End Role="DocumentosRelacionados" Type="Self.DocumentosRelacionados" Multiplicity="1" />
+    <End Role="ResultadoDeDocumentosRelacionados" Type="Self.ResultadoDeDocumentosRelacionados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocumentosRelacionados">
+        <PropertyRef Name="IdDocumentosRelacionados" />
+      </Principal>
+      <Dependent Role="ResultadoDeDocumentosRelacionados">
+        <PropertyRef Name="IdDocumentoRealizado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+    <End Role="PersonalInvolucrado" Type="Self.PersonalInvolucrado" Multiplicity="1" />
+    <End Role="ResultadoDePersonalInvolucrado" Type="Self.ResultadoDePersonalInvolucrado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonalInvolucrado">
+        <PropertyRef Name="IdPersonal" />
+      </Principal>
+      <Dependent Role="ResultadoDePersonalInvolucrado">
+        <PropertyRef Name="IdPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DesviacionesDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AreaInvolucrada" EntityType="Self.AreaInvolucrada" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+    <EntitySet Name="Componentes" EntityType="Self.Componentes" />
+    <EntitySet Name="Desviaciones" EntityType="Self.Desviaciones" />
+    <EntitySet Name="DocumentosRelacionados" EntityType="Self.DocumentosRelacionados" />
+    <EntitySet Name="PersonalInvolucrado" EntityType="Self.PersonalInvolucrado" />
+    <EntitySet Name="ResultadoDeDocumentosRelacionados" EntityType="Self.ResultadoDeDocumentosRelacionados" />
+    <EntitySet Name="ResultadoDePersonalInvolucrado" EntityType="Self.ResultadoDePersonalInvolucrado" />
+    <EntitySet Name="ResultadoDeTipoDeComponente" EntityType="Self.ResultadoDeTipoDeComponente" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TipoDesviacion" EntityType="Self.TipoDesviacion" />
+    <EntitySet Name="ResultadoDeAreaInvolucrada" EntityType="Self.ResultadoDeAreaInvolucrada" />
+    <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_AreaInvolucrada" Association="Self.FK_ResultadoDeAreaInvolucrada_AreaInvolucrada">
+      <End Role="AreaInvolucrada" EntitySet="AreaInvolucrada" />
+      <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Desviaciones_Clientes" Association="Self.FK_Desviaciones_Clientes">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Desviaciones_Componentes" Association="Self.FK_Desviaciones_Componentes">
+      <End Role="Componentes" EntitySet="Componentes" />
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDeTipoDeComponente_Componentes" Association="Self.FK_ResultadoDeTipoDeComponente_Componentes">
+      <End Role="Componentes" EntitySet="Componentes" />
+      <End Role="ResultadoDeTipoDeComponente" EntitySet="ResultadoDeTipoDeComponente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDeAreaInvolucrada_Desviaciones" Association="Self.FK_ResultadoDeAreaInvolucrada_Desviaciones">
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+      <End Role="ResultadoDeAreaInvolucrada" EntitySet="ResultadoDeAreaInvolucrada" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_Desviaciones" Association="Self.FK_ResultadoDeDocumentosRelacionados_Desviaciones">
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+      <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_Desviaciones" Association="Self.FK_ResultadoDePersonalInvolucrado_Desviaciones">
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+      <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDeTipoDeComponente_Desviaciones" Association="Self.FK_ResultadoDeTipoDeComponente_Desviaciones">
+      <End Role="Desviaciones" EntitySet="Desviaciones" />
+      <End Role="ResultadoDeTipoDeComponente" EntitySet="ResultadoDeTipoDeComponente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados" Association="Self.FK_ResultadoDeDocumentosRelacionados_DocumentosRelacionados">
+      <End Role="DocumentosRelacionados" EntitySet="DocumentosRelacionados" />
+      <End Role="ResultadoDeDocumentosRelacionados" EntitySet="ResultadoDeDocumentosRelacionados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado" Association="Self.FK_ResultadoDePersonalInvolucrado_PersonalInvolucrado">
+      <End Role="PersonalInvolucrado" EntitySet="PersonalInvolucrado" />
+      <End Role="ResultadoDePersonalInvolucrado" EntitySet="ResultadoDePersonalInvolucrado" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

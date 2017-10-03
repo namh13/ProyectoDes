@@ -1,0 +1,176 @@
+﻿@model ProyectoDesviaciones.BD.Desviaciones
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Desviaciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDesviacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDesviacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequeridoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequeridoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionProcesoCorrecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionProcesoCorrecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionCondicionComponente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionCondicionComponente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionRazonDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionRazonDesviacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionPlanDeAccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionPlanDeAccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionFechaDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionFechaDesviacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionResponsable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionResponsable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CriterioAceptado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CriterioAceptado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DetalleCriterioAceptado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DetalleCriterioAceptado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vencimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vencimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaVencimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaVencimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadDePiezas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadDePiezas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreadoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreadoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoDesviacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clientes.DescripcionDelCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clientes.DescripcionDelCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Componentes.NumeroParte)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Componentes.NumeroParte)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDesviacion.DescripcionTipoDesviacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDesviacion.DescripcionTipoDesviacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
